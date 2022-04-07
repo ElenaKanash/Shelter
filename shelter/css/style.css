@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: green;
+  font-family: 'Arimo', 'Arial', sans-serif;
+  font-family: 'Tinos', 'Georgia', serif;
+  background-color: #F6F6F6;
 }
