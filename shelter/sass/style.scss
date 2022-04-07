@@ -1,0 +1,15 @@
+@import 'null';
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'burger';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arimo', 'Arial', sans-serif;
+  font-family: 'Tinos', 'Georgia', serif;
+  background-color: green;
+}
