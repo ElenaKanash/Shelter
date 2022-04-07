@@ -8,7 +8,15 @@ $color-dark-xl: #4C4C4C;
 $color-dark-2xl:  #444444;
 $color-dark-3xl: #292929;
 $color-primary:  #F1CDB3;
-$color-primary-light:  #FDDCC4;
+$color-primary-light:#FDDCC4;
+
+
+%display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 @mixin large-scrin () {
