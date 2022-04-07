@@ -12,5 +12,17 @@ body {
   font-family: 'Arimo', 'Arial', sans-serif;
   font-family: 'Tinos', 'Georgia', serif;
   background-color: $color-light-l;
-
+  color: $color-dark-xl;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 40px;
+}
+
