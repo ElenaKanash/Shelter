@@ -11,6 +11,15 @@ $color-primary:  #F1CDB3;
 $color-primary-light:#FDDCC4;
 
 
+%fontArial {
+  font-family: 'Arimo', 'Arial', sans-serif;
+}
+
+%fontGeorgia {
+  font-family: 'Tinos', 'Georgia', serif;
+}
+
+
 %display-flex {
   display: flex;
   flex-wrap: wrap;

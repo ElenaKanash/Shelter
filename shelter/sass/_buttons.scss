@@ -9,4 +9,9 @@
   line-height: 130%;
   letter-spacing: 0.09em;
   color: $color-dark-3xl;
+  transition: all 0.3s;
+  &:hover {
+    background: $color-primary-light;
+    cursor: pointer;
+  }
 }

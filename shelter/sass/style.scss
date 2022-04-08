@@ -5,6 +5,7 @@
 @import 'footer';
 @import 'burger';
 @import 'buttons';
+@import 'about';
 
 html {
   scroll-behavior: smooth;
@@ -15,7 +16,7 @@ body {
   font-family: 'Tinos', 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
-  background:radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background:url(../assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
  // background-color: $color-light-l;
   color: $color-dark-xl;
 }
