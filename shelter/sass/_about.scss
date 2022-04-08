@@ -5,15 +5,41 @@
   padding-bottom: 100px;
 }
 .about__wrapper {
-  
+  display: flex;
+  justify-content:center;
+
 }
 .about__img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 120px;
+  img {
+    object-fit: cover;
+  }
 }
 .about__content {
+  max-width: 430px;
+  margin-top: 14px;
 }
 .section-title {
+  @extend %fontGeorgia;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  color: $color-dark-l;
+  margin-bottom: 25px;
 }
+
 .about-title {
+  max-width: 370px;
 }
 .about__text {
+  @extend %fontArial;
+  font-size: 15px;
+  line-height: 160%;
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
+

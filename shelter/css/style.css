@@ -69,6 +69,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.about__text {
+  font-family: 'Arimo', 'Arial', sans-serif;
+}
+
+.section-title {
+  font-family: 'Tinos', 'Georgia', serif;
+}
+
 .header__wrapper, .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +226,53 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   padding-top: 80px;
   padding-bottom: 100px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 120px;
+}
+
+.about__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__content {
+  max-width: 430px;
+  margin-top: 14px;
+}
+
+.section-title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  color: #545454;
+  margin-bottom: 25px;
+}
+
+.about-title {
+  max-width: 370px;
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 160%;
+  margin-bottom: 25px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
 }
 
 html {
