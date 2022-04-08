@@ -1,8 +1,10 @@
 @import 'null';
 @import 'variables';
 @import 'header';
+@import 'start-section';
 @import 'footer';
 @import 'burger';
+@import 'buttons';
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +13,10 @@ html {
 body {
   font-family: 'Arimo', 'Arial', sans-serif;
   font-family: 'Tinos', 'Georgia', serif;
-  background-color: $color-light-l;
+  font-style: normal;
+  font-weight: 400;
+  background:radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+ // background-color: $color-light-l;
   color: $color-dark-xl;
 }
 
