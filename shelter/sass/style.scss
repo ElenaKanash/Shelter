@@ -7,6 +7,7 @@
 @import 'buttons';
 @import 'about';
 @import 'friends';
+@import 'help';
 
 html {
   scroll-behavior: smooth;
@@ -43,6 +44,14 @@ section {
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.09em;
+  color: $color-dark-l;
+}
+
+.card__title {
+  @extend %fontGeorgia;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
   color: $color-dark-l;
 }
 

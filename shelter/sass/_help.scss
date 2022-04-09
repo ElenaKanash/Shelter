@@ -1,0 +1,31 @@
+.help {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: $color-light-xl;
+}
+
+.help__title {
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 60px;
+}
+.help__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 55px;
+  column-gap: 120px;
+  max-width: 1026px;
+  margin: auto;
+}
+.help__card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.help__card-img {
+ // display: block;
+  margin-bottom: 30px;
+}
