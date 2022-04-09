@@ -6,6 +6,7 @@
 @import 'burger';
 @import 'buttons';
 @import 'about';
+@import 'friends';
 
 html {
   scroll-behavior: smooth;
@@ -30,5 +31,18 @@ img {
   max-width: 1280px;
   margin: auto;
   padding: 0 40px;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.section__title {
+  @extend %fontGeorgia;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.09em;
+  color: $color-dark-l;
 }
 
