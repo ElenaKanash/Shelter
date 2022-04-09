@@ -447,10 +447,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.donation__link:hover {
-  cursor: pointer;
-}
-
 .credit {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -461,6 +457,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 43px;
   background-color: #F1CDB3;
   border-radius: 9px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.credit:hover {
+  background: #FDDCC4;
+  cursor: pointer;
 }
 
 .donation__descr {
