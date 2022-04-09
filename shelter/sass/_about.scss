@@ -1,8 +1,7 @@
 .about {
   min-height: 588px;
   background-color: $color-light-xl;
-  padding-top: 80px;
-  padding-bottom: 100px;
+
 }
 .about__wrapper {
   display: flex;
@@ -21,17 +20,11 @@
   max-width: 430px;
   margin-top: 14px;
 }
-.section-title {
-  @extend %fontGeorgia;
-  font-size: 35px;
-  line-height: 130%;
-  letter-spacing: 0.1em;
-  color: $color-dark-l;
-  margin-bottom: 25px;
-}
+
 
 .about-title {
   max-width: 370px;
+  margin-bottom: 25px;
 }
 .about__text {
   @extend %fontArial;
