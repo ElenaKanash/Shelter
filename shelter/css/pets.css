@@ -168,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 .link-active {
   color: #FAFAFA;
   border-bottom: 2px solid #F1CDB3;
+  cursor: auto;
 }
 
 .footer {
@@ -360,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn__disabled:hover {
-  cursor: none;
+  cursor: auto;
 }
 
 .btn__active {
@@ -369,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn__active:hover {
-  cursor: none;
+  cursor: auto;
 }
 
 .btn__forward:hover {
@@ -445,4 +446,5 @@ section {
 
 .link-active {
   color: #292929;
+  cursor: auto;
 }

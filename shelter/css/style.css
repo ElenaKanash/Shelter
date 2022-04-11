@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 .link-active {
   color: #FAFAFA;
   border-bottom: 2px solid #F1CDB3;
+  cursor: auto;
 }
 
 .start {
