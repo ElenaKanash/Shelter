@@ -1,0 +1,38 @@
+.about {
+  min-height: 588px;
+  background-color: $color-light-xl;
+
+}
+.about__wrapper {
+  display: flex;
+  justify-content:center;
+
+}
+.about__img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 120px;
+  img {
+    object-fit: cover;
+  }
+}
+.about__content {
+  max-width: 430px;
+  margin-top: 14px;
+}
+
+
+.about-title {
+  max-width: 370px;
+  margin-bottom: 25px;
+}
+.about__text {
+  @extend %fontArial;
+  font-size: 15px;
+  line-height: 160%;
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
