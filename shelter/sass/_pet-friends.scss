@@ -85,7 +85,7 @@
 .btn__disabled {
   border-color: $color-dark-s;
   &:hover {
-    cursor:none;
+    cursor:auto;
   }
 }
 
@@ -93,7 +93,7 @@
   background: $color-primary;
   border-color: $color-primary;
   &:hover {
-    cursor:none;
+    cursor:auto; 
   }
 }
 
