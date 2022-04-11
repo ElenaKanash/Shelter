@@ -439,6 +439,10 @@ section {
   color: #545454;
 }
 
+.nav__link:hover {
+  color: #292929;
+}
+
 .link-active {
   color: #292929;
 }

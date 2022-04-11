@@ -65,6 +65,9 @@ section {
 }
 .nav__link {
   color: $color-dark-l;
+  &:hover {
+    color: $color-dark-3xl;
+  }
 }
 .link-active {
   color: $color-dark-3xl;
