@@ -1,4 +1,6 @@
-.friends {
+.our-freinds {
+  height: 1342px;
+  margin-top: 120px;
   background: $color-light-l;
 }
 
@@ -11,27 +13,17 @@
 }
 .slider__wrapper {
   @extend %display-flex;
- // height: 435px;
-  margin-bottom: 60px;
-}
-.slider__btn {
-  @extend %display-flex;
-  justify-content: center;
-  width: 52px;;
-  height: 52px;
-  border: 2px solid #F1CDB3;
-  box-sizing: border-box;
-  border-radius: 100px;
-  &:hover {
-    background: $color-primary-light;
-    border-color: $color-primary-light;
+  margin-top: 15px;
+  margin-bottom: 15px;
   }
-}
 
-.slider__cards {
-  @extend %display-flex;
-  gap: 90px
-}
+  .slider__cards {
+    @extend %display-flex;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-bottom: 60px;
+  }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -58,7 +50,6 @@
   //margin-bottom: 30px;
 }
 
-
 .card__button {
   background-color: transparent;
   border: 2px solid $color-primary;
@@ -68,7 +59,47 @@
   }
 }
 
-.friends__button {
-  display: block;
+.slider__btns {
+  @extend %display-flex;
+  justify-content: space-between;
+  gap: 20px;
   margin: auto;
+  max-width: 340px;
+}
+
+.slider__btn {
+  @extend %display-flex;
+  justify-content: center;
+  width: 52px;;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  @extend %fontGeorgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-xl;
+}
+
+.btn__disabled {
+  border-color: $color-dark-s;
+  &:hover {
+    cursor:none;
+  }
+}
+
+.btn__active {
+  background: $color-primary;
+  border-color: $color-primary;
+  &:hover {
+    cursor:none;
+  }
+}
+
+.btn__forward {
+  &:hover {
+    background: $color-primary;
+    border-color: $color-primary;
+  }
 }
