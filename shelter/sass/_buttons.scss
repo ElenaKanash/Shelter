@@ -15,3 +15,9 @@
     cursor: pointer;
   }
 }
+
+.start-btn {
+  @include medium-scrin {
+    margin: auto;
+  }
+}

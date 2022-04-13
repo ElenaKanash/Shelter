@@ -6,6 +6,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   //background-color: #5B483A;
+  @include medium-scrin {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 
 .header__wrapper {

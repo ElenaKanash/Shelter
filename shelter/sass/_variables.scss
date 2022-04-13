@@ -27,15 +27,8 @@ $color-primary-light:#FDDCC4;
   align-items: center;
 }
 
-
-@mixin large-scrin () {
-  @media (max-width: px) {
-    @content;
-  }
-}
-
 @mixin medium-scrin () {
-  @media (max-width: px) {
+  @media (max-width: 769px) {
     @content;
   }
 }
