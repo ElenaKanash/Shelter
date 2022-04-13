@@ -383,6 +383,18 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
 }
 
+@media (max-width: 769px) {
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 80px;
+    margin: auto;
+    width: 437px;
+  }
+}
+
 .about__img {
   max-width: 300px;
   height: auto;
@@ -394,9 +406,21 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 
+@media (max-width: 769px) {
+  .about__img {
+    margin: auto;
+  }
+}
+
 .about__content {
   max-width: 430px;
   margin-top: 14px;
+}
+
+@media (max-width: 769px) {
+  .about__content {
+    margin-top: 0;
+  }
 }
 
 .about-title {
