@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .start-btn {
     margin: auto;
   }
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 60px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .header {
     padding-top: 30px;
     padding-bottom: 0;
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Tinos', 'Georgia', serif;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer {
     padding-top: 30px;
     height: 639px;
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: start;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer__link {
     margin-top: 0;
   }
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 16px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer__adress {
     margin-top: 0;
   }
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position-y: center;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer__boston {
     padding-left: 41px;
   }
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 44px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .footer__london {
     padding-left: 41px;
   }
@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #F6F6F6;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .our-freinds {
     height: 1733px;
   }
@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .friends__tittle {
     margin-bottom: 30px;
   }
@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .slider__cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #FDDCC4;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .last-card {
     display: none;
   }
@@ -484,7 +484,7 @@ img {
   padding: 0 40px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1279px) {
   .container {
     padding: 0 30px;
   }

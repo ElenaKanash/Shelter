@@ -28,7 +28,7 @@ $color-primary-light:#FDDCC4;
 }
 
 @mixin medium-scrin () {
-  @media (max-width: 769px) {
+  @media (max-width: 1279px) {
     @content;
   }
 }
