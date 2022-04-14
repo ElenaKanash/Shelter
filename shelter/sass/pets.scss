@@ -28,6 +28,9 @@ img {
   max-width: 1280px;
   margin: auto;
   padding: 0 40px;
+  @include medium-scrin {
+    padding: 0 30px;
+  }
 }
 
 section {
