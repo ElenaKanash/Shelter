@@ -475,6 +475,12 @@ h1, h2, h3, h4, h5, h6 {
   gap: 90px;
 }
 
+@media (max-width: 769px) {
+  .slider__cards {
+    gap: 40px;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,6 +523,12 @@ h1, h2, h3, h4, h5, h6 {
 .card__button:hover {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+
+@media (max-width: 769px) {
+  .third-card {
+    display: none;
+  }
 }
 
 .friends__button {
