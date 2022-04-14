@@ -7,14 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include medium-scrin {
+    flex-direction: column;
+  }
 }
 .donation__img {
   width: 505px;
   height: 261px;
   margin-right: 30px;
+  @include medium-scrin {
+    order: 1;
+    margin: auto;
+  }
 }
+
 .donation__content {
   width: 380px;
+  @include medium-scrin {
+    margin-bottom: 60px;
+  }
 }
 
 .donation__title {
