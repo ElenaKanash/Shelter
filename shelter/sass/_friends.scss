@@ -30,7 +30,10 @@
 
 .slider__cards {
   @extend %display-flex;
-  gap: 90px
+  gap: 90px;
+  @include medium-scrin {
+    gap: 40px;
+  }
 }
 .card {
   display: flex;
@@ -58,13 +61,18 @@
   //margin-bottom: 30px;
 }
 
-
 .card__button {
   background-color: transparent;
   border: 2px solid $color-primary;
   &:hover {
     background-color: $color-primary-light;
     border: 2px solid $color-primary-light;
+  }
+}
+
+.third-card {
+  @include medium-scrin  {
+    display: none;
   }
 }
 
