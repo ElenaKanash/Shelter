@@ -322,12 +322,24 @@ h1, h2, h3, h4, h5, h6 {
   background: #F6F6F6;
 }
 
+@media (max-width: 769px) {
+  .our-freinds {
+    height: 1733px;
+  }
+}
+
 .friends__tittle {
   max-width: 400px;
   margin: auto;
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 60px;
+}
+
+@media (max-width: 769px) {
+  .friends__tittle {
+    margin-bottom: 30px;
+  }
 }
 
 .slider__wrapper {
@@ -340,6 +352,15 @@ h1, h2, h3, h4, h5, h6 {
           column-gap: 40px;
   row-gap: 30px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 769px) {
+  .slider__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 45px;
+  }
 }
 
 .card {
@@ -369,6 +390,12 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover .card__button {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+
+@media (max-width: 769px) {
+  .last-card {
+    display: none;
+  }
 }
 
 .card__img {
@@ -455,6 +482,12 @@ img {
   max-width: 1280px;
   margin: auto;
   padding: 0 40px;
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 0 30px;
+  }
 }
 
 section {
