@@ -18,11 +18,18 @@
   column-gap: 120px;
   max-width: 1026px;
   margin: auto;
+  @include medium-scrin {
+    column-gap: 60px;
+  }
 }
+
 .help__card {
   display: flex;
   flex-direction: column;
   align-items:center;
+  @include medium-scrin {
+    width: 170px;
+  }
 }
 
 .help__card-img {
