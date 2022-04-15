@@ -226,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1279px) {
   .footer-link__wrapper {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 65px;
+    gap: 0;
   }
 }
 
@@ -363,9 +364,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1279px) {
   .slider__wrapper {
-    max-width: 800px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    max-width: 900px;
+    padding: 0 64px;
   }
 }
 
@@ -382,6 +382,9 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 45px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
