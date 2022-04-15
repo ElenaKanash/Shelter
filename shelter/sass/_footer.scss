@@ -24,10 +24,11 @@
   align-items: start;
   gap: 160px;
   @include medium-scrin {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 65px;
+    gap: 0;
   }
 }
 
