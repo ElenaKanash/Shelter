@@ -8,6 +8,9 @@
     padding-top: 150px;
     height: 1165px;
   }
+  @include small-scrin {
+    height: 823px;
+  }
 }
 .start__wrapper {
   display: flex;
@@ -25,6 +28,11 @@
     bottom: 0px;
     width: 569px;
     height: 593px;
+  }
+  @include small-scrin {
+    width: 260px;
+    height: 271px;
+    left: calc(50% - 260px/2 + 20px);
   }
 }
 
@@ -45,13 +53,29 @@
   letter-spacing: 0.04em;
   margin-bottom: 42px;
   max-width: 310px;
+  @include small-scrin {
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.09em;
+  }
 }
+
+.start__title-span {
+  display: block;
+  margin: auto;
+}
+
 .start__descr {
   font-family: 'Arimo', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 160%;
   color: $color-light-xl;
   margin-bottom: 42px;
+  @include small-scrin {
+    text-align: center;
+  }
 }
 
 .start__btn-link {

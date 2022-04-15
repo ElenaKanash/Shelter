@@ -43,6 +43,9 @@
   color: $color-light-xl;
 }
 .nav {
+  @include small-scrin {
+    display: none;
+  }
 }
 .nav__list {
   @extend %display-flex;

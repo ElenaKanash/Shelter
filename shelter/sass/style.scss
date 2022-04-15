@@ -39,12 +39,18 @@ img {
    // width: calc(100% - 30px);
   padding: 0 30px;
   }
+  @include small-scrin {
+    padding: 0 10px;
+  }
 }
 
 section {
   padding-top: 80px;
   padding-bottom: 100px;
-
+  @include small-scrin {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 .section__title {
@@ -53,6 +59,10 @@ section {
   line-height: 130%;
   letter-spacing: 0.09em;
   color: $color-dark-l;
+  @include small-scrin {
+    font-size: 25px;
+    line-height: 130%;
+  }
 }
 
 .card__title {

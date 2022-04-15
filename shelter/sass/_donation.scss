@@ -18,6 +18,11 @@
   @include medium-scrin {
     order: 1;
     margin: auto;
+    @include small-scrin {
+      width: 260px;
+      height: 135px;
+      margin: auto;
+    }
   }
 }
 
