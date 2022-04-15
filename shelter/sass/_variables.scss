@@ -34,7 +34,7 @@ $color-primary-light:#FDDCC4;
 }
 
 @mixin small-scrin () {
-  @media (max-width: px) {
+  @media (max-width: 767px) {
     @content;
   }
 }

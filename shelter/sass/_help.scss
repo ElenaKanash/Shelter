@@ -20,6 +20,7 @@
   margin: auto;
   @include medium-scrin {
     column-gap: 60px;
+    max-width: 800px;
   }
 }
 

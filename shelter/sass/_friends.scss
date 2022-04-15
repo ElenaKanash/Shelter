@@ -13,6 +13,9 @@
   @extend %display-flex;
  // height: 435px;
   margin-bottom: 60px;
+  @include medium-scrin {
+    justify-content: space-around;
+  }
 }
 .slider__btn {
   @extend %display-flex;
