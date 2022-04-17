@@ -1,4 +1,5 @@
 .start {
+  position: relative;
   font-family: 'Tinos', 'Georgia', serif;
   padding-top: 180px;
   height: 908px;
@@ -23,7 +24,7 @@
   max-width: 698px;
   height: 728px;
   @include medium-scrin {
-    position: relative;
+    position: absolute;
     left: calc(50% - 569px/2 + 70px);
     bottom: 0px;
     width: 569px;
@@ -32,7 +33,11 @@
   @include small-scrin {
     width: 260px;
     height: 271px;
-    left: calc(50% - 260px/2 + 20px);
+    bottom: 0px;
+    left: 13.33%;
+    right: 0%;
+   // top: 59.58%;
+    bottom: 0.03%;
   }
 }
 
@@ -42,7 +47,12 @@
   @include medium-scrin {
     margin-top: 0;
     margin: auto;
+    max-width: 460px;
   }
+  @include small-scrin {
+    max-width: 300px;
+  }
+
 
 }
 .start__title {
@@ -83,5 +93,8 @@
   @include medium-scrin {
     text-align: center;
     margin-bottom: 100px;
+  }
+  @include small-scrin {
+    margin-bottom: 105px;
   }
 }

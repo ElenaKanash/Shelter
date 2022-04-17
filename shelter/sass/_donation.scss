@@ -2,6 +2,9 @@
   padding-top: 80px;
   padding-bottom: 97px;
   background: $color-light-l;
+  @include small-scrin {
+    padding: 42px 0;
+  }
 }
 .donation__wrapper {
   display: flex;
@@ -9,6 +12,11 @@
   align-items: center;
   @include medium-scrin {
     flex-direction: column;
+    margin: auto;
+  }
+  @include small-scrin {
+    width: 300px;
+    padding: 0 9px;
   }
 }
 .donation__img {
@@ -31,6 +39,11 @@
   @include medium-scrin {
     margin-bottom: 60px;
   }
+  @include small-scrin {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
 }
 
 .donation__title {
@@ -41,6 +54,14 @@
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.1em;
+  @include small-scrin {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 230px;
+  }
 }
 
 .donation__subtitle {
@@ -50,6 +71,11 @@
   letter-spacing: 0.1em;
   color: $color-dark-l;
   margin-bottom: 20px;
+  @include small-scrin {
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+  }
 }
 .donation__link {
   display: block;
@@ -69,6 +95,15 @@
     background: $color-primary-light;
     cursor: pointer;
   }
+  @include small-scrin {
+    width: 280px;
+  }
+}
+
+.credit__img-number {
+  @include small-scrin {
+    width: 206px;
+  }
 }
 
 .donation__descr {
@@ -77,4 +112,7 @@
   font-size: 12px;
   line-height: 18px;
   color: $color-dark-m;
+  @include small-scrin {
+    text-align: justify;
+  }
 }

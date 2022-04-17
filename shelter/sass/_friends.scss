@@ -8,7 +8,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 60px;
+  @include small-scrin {
+    margin-bottom: 42px;
+  }
 }
+
 .slider__wrapper {
   @extend %display-flex;
  // height: 435px;
@@ -16,7 +20,14 @@
   @include medium-scrin {
     justify-content: space-around;
   }
+  @include small-scrin {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 42px;
+  justify-content: center;
+  }
 }
+
 .slider__btn {
   @extend %display-flex;
   justify-content: center;
@@ -31,11 +42,27 @@
   }
 }
 
+.btn__left {
+  @include small-scrin {
+    order: 2;
+    margin-right: 80px;
+  }
+}
+
+.btn__right {
+  @include small-scrin {
+    order: 3;
+  }
+}
+
 .slider__cards {
   @extend %display-flex;
   gap: 90px;
   @include medium-scrin {
     gap: 40px;
+  }
+  @include small-scrin {
+    margin-bottom: 20px;
   }
 }
 .card {
@@ -75,6 +102,12 @@
 
 .third-card {
   @include medium-scrin  {
+    display: none;
+  }
+}
+
+.second-card {
+  @include small-scrin {
     display: none;
   }
 }
