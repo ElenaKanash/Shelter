@@ -51,6 +51,11 @@ section {
   line-height: 130%;
   letter-spacing: 0.09em;
   color: $color-dark-l;
+  @include small-scrin {
+    font-size: 25px;
+    line-height: 130%;
+    //margin-bottom: 42px;
+  }
 }
 
 .card__title {
@@ -68,7 +73,7 @@ section {
   background-color: $color-light-xl;
   @include medium-scrin {
     padding-top: 30px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 }
 .logo__title{
