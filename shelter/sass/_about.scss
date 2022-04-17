@@ -32,7 +32,6 @@
   }
   @include small-scrin {
     width: 263px;
-
   }
 }
 .about__content {
@@ -43,7 +42,9 @@
   }
   @include small-scrin {
     padding: 0 15px;
-    margin-bottom: 42px;
+    margin: auto;
+    margin-bottom: 36px;
+
   }
 }
 
