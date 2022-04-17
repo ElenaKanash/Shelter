@@ -19,7 +19,6 @@
   }
   @include small-scrin {
     gap: 40px;
-    padding: 0 11px;
   }
 }
 
@@ -35,6 +34,8 @@
     gap: 0;
   }
   @include small-scrin {
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 }
@@ -51,9 +52,14 @@
   }
   @include medium-scrin {
     margin-top: 0;
+    @include small-scrin {
+      align-items: center;
+    }
   }
   @include small-scrin {
     padding: 0 11px;
+    width: 278px;
+    height: 208px;
   }
 }
 
@@ -66,6 +72,12 @@
   margin-top: 16px;
   @include medium-scrin{
     margin-top: 0;
+    width: 302px;
+    height: 234px;
+  }
+  @include small-scrin {
+    width: 300px;
+    height: 222px;
   }
 }
 
@@ -78,6 +90,8 @@
     font-size: 25px;
     line-height: 130%;
     text-align: center;
+    margin: 0 auto;
+    width: 240px;
   }
 }
 
@@ -94,12 +108,15 @@
     color: $color-primary-light;
   }
   @include small-scrin {
-    letter-spacing: 0.07em;
+    letter-spacing: 0.1em;
   }
 }
 
 .footer__email {
   background-image: url(../assets/icons/icon-email.svg);
+  @include small-scrin{
+    margin-right: 6px;
+  }
 }
 .footer__tel {
   background-image: url(../assets/icons/phone.svg);
@@ -114,4 +131,12 @@
 .footer__london {
   background-image: url(../assets/icons/icon-marker.svg);
   padding-left: 40px;
+}
+
+.footer__img {
+  @include small-scrin {
+    width: 260px;
+    height: 269px;
+    left: calc(50% - 260px/2);
+  }
 }
