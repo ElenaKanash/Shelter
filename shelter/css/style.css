@@ -532,6 +532,72 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.burger {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    width: 30px;
+    height: 22px;
+    margin-right: 43px;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    cursor: pointer;
+  }
+}
+
+.burger.rotate {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0px;
+  background-color: #F1CDB3;
+  border: 1px solid #F1CDB3;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.burger_pets__line {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.burger__line_first {
+  top: 0;
+}
+
+.burger__line_second {
+  top: 50%;
+}
+
+.burger__line_third {
+  bottom: 0;
+}
+
 .button {
   padding: 15px 45px;
   background: #F1CDB3;
