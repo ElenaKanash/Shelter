@@ -27,21 +27,14 @@ $color-primary-light:#FDDCC4;
   align-items: center;
 }
 
-
-@mixin large-scrin () {
-  @media (max-width: px) {
-    @content;
-  }
-}
-
 @mixin medium-scrin () {
-  @media (max-width: px) {
+  @media (max-width: 1279px) {
     @content;
   }
 }
 
 @mixin small-scrin () {
-  @media (max-width: px) {
+  @media (max-width: 767px) {
     @content;
   }
 }

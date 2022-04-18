@@ -5,7 +5,12 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  z-index: 10;
   //background-color: #5B483A;
+  @include medium-scrin {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 
 .header__wrapper {
@@ -39,6 +44,9 @@
   color: $color-light-xl;
 }
 .nav {
+  @include small-scrin {
+    display: none;
+  }
 }
 .nav__list {
   @extend %display-flex;
