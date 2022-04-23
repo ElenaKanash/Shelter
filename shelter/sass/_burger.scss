@@ -6,7 +6,7 @@
     width: 30px;
     height: 22px;
     margin-right: 43px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     cursor: pointer;
     z-index: 10;
   }
@@ -25,7 +25,7 @@
   height: 0px;
   background-color: $color-primary;
   border: 1px solid $color-primary;
-  transition: transform 0.3s;
+ // transition: transform 0.3s;
 }
 
 .burger_pets__line{
@@ -36,7 +36,7 @@
   height: 0px;
   background-color: #000000;
   border: 1px solid #000000;
-  transition: transform 0.3s;
+ // transition: transform 0.3s;
 }
 
 .burger__line_first {

@@ -177,25 +177,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
-.nav {
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
 @media (max-width: 767px) {
   .nav {
-    display: none;
+    position: fixed;
     width: 320px;
     height: 823px;
-    background: #292929;
-    position: absolute;
     top: 0;
     right: 0;
+    background: #292929;
     z-index: 10;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
   }
 }
 
@@ -204,13 +200,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav.active {
-  display: block;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -255,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
     line-height: 160%;
   }
+}
+
+.nav__link.disabled {
+  pointer-events: none;
 }
 
 .link-active {
@@ -697,9 +693,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 30px;
     height: 22px;
     margin-right: 43px;
-    -webkit-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     cursor: pointer;
     z-index: 10;
   }
@@ -719,11 +715,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 0px;
   background-color: #F1CDB3;
   border: 1px solid #F1CDB3;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger_pets__line {
@@ -734,11 +725,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 0px;
   background-color: #000000;
   border: 1px solid #000000;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger__line_first {
