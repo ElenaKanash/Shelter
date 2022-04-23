@@ -67,30 +67,23 @@
 }
 
 .nav {
-  transition-duration: 0.5s;
   @include small-scrin {
-    display: none;
+    position: fixed;
     width: 320px;
     height: 823px;
-    background: $color-dark-3xl;
-    position: absolute;
     top: 0;
     right: 0;
+    background: $color-dark-3xl;
     z-index: 10;
     transform: translateX(100%);
-    //transition: 1s right linear;
-   // transition: transform 0.4s;
-
+    transition: .3s all linear;
   }
 }
 .nav_pets{
   background: $color-light-xl;
 }
 .nav.active {
-  display: block;
   transform: translateX(0);
- // transition: 2s all ;
- transition-duration: 0.5s;
 }
 
 .nav__list {
@@ -126,6 +119,10 @@
     font-size: 32px;
     line-height: 160%;
   }
+}
+
+.nav__link.disabled {
+    pointer-events: none;
 }
 
 .link-active {
