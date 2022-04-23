@@ -9,16 +9,17 @@ const wrapper = document.querySelector('.header__wrapper'),
 //menuLinks[3].classList.toggle('disabled');
 
 
-burgerBtn.addEventListener('click', toggleMenu); 
+burgerBtn.addEventListener('click', toggleMenu);
+
+overlay.addEventListener('click', toggleMenu);
 
 menuLinks.forEach(el =>
   el.addEventListener('click', toggleMenu));
-  overlay.addEventListener('click', toggleMenu);
 
-  menuLinks.forEach(el =>
-    el.addEventListener('click', () => {
-      document.body.style.overflow = "visible"
-    }));
+menuLinks.forEach(el =>
+  el.addEventListener('click', () => {
+    document.body.style.overflow = "visible"
+  }));
 
 function  toggleMenu() {
   menu.classList.toggle('active');
