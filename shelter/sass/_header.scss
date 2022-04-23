@@ -36,7 +36,11 @@
   @include small-scrin {
    // z-index: 15;
   //  margin-left: auto;
+  }
 }
+
+.logo__link_main.disabled {
+  pointer-events: none;
 }
 
 .logo__title {
@@ -122,7 +126,7 @@
 }
 
 .nav__link.disabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .link-active {
