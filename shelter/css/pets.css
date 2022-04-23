@@ -149,6 +149,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.logo__link_main.disabled {
+  pointer-events: none;
+}
+
 .logo__title {
   margin-bottom: 10px;
   font-family: 'Tinos','Georgia';
