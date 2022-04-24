@@ -769,6 +769,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.modal {
+  display: none;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
