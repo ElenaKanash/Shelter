@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+ // display: none;
 }
 
 .modal__overlay {
@@ -19,23 +19,43 @@
   width: 952px;
   min-height: 552px;
   transform: translate(26px, -26px);
+  @include medium-scrin {
+    width: 682px;
+    min-height: 402px;
+  }
+  @include small-scrin {
+    width: 271px;
+  }
 }
 
 .modal__close {
-  z-index: 10;
-}
-
-.modal__close-icone {
-  position: relative;
+/*  position: relative;
   left: 890px;
   top: 0px;
   height: 52px;
   width: 52px;
   padding: 15px;
   border: 2px solid #F1CDB3;
-  border-radius: 100px;
+  border-radius: 100px;*/
+
+  z-index: 10;
   &:hover{
     cursor: pointer;
+  }
+  position: relative;
+  left: 890px;
+  top: 0px;
+  height: 52px;
+  width: 52px;
+  padding: 18px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+
+  @include medium-scrin{
+    left: 621px;
+  }
+  @include small-scrin {
+    left: 218px;
   }
 }
 
@@ -46,15 +66,31 @@
   min-height: 500px;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   background-color: $color-light-s;
-  border-radius: 1%;
+  border-radius: 9px;
+  @include medium-scrin{
+    width: 630px;
+    min-height: 350px;
+  }
+  @include small-scrin {
+   // display: block;
+   justify-content: center;
+    width: 240px;
+  }
 
 }
 .modal__img-wrapper {
   width: 500px;
+  @include medium-scrin{
+    width: 350px;
+  }
+  @include small-scrin {
+    display: none;
+  }
 }
 .modal__img {
   border-radius: 1%;
 }
+
 .modal__content {
   @extend %fontGeorgia;
   width: 351px;
@@ -62,19 +98,35 @@
   padding-right: 20px;
   color: #000000;
   letter-spacing: 0.06em;
+  @include medium-scrin{
+    width: 260px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  @include small-scrin {
+    width: 220px;
+  }
 
 }
 .modal__title {
   font-size: 35px;
   line-height: 130%;
-
   margin-bottom: 10px;
+  text-align: center;
 }
+
 .modal__subtitle {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
   margin-bottom: 40px;
+  @include medium-scrin{
+    margin-bottom: 20px;
+  }
+  @include small-scrin {
+    text-align: center;
+  }
 }
 
 .modal__description {
@@ -82,10 +134,24 @@
   line-height: 110%;
   letter-spacing: 0.06em;
   margin-bottom: 40px;
+  @include medium-scrin{
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  @include small-scrin {
+    margin-bottom: 24px;
+    text-align: justify;
+  }
 }
 
 .modal__list {
   margin-left: 20px;
+  @include medium-scrin{
+
+  }
+  @include small-scrin {
+
+  }
 }
 
 .modal__item {
@@ -93,6 +159,14 @@
   line-height: 110%;
   letter-spacing: 0.06em;
   margin-bottom: 11px;
+  @include medium-scrin{
+  margin-bottom: 5px;
+
+
+  }
+  @include small-scrin {
+
+  }
 }
 .modal__span {
   font-weight: 700;
