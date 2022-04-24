@@ -1,3 +1,5 @@
+// burger
+
 const wrapper = document.querySelector('.header__wrapper'),
       overlay = document.querySelector('.nav-overley'),
       burgerBtn = document.querySelector('.burger'),
@@ -30,6 +32,14 @@ function  toggleMenu() {
   burgerBtn.classList.toggle('active');
   document.body.style.overflow = "hidden"; //запретить скролл при открытии меню
 }
+
+// burger end
+
+// modal
+
+
+
+
 
 
 
