@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Tinos', 'Georgia', serif;
 }
 
-.header__wrapper, .nav__list, .footer__wrapper, .footer-link__wrapper, .slider__wrapper, .slider__cards, .slider__btns, .slider__btn, .modal__wrapper {
+.header__wrapper, .nav__list, .footer__wrapper, .footer-link__wrapper, .slider__wrapper, .slider__cards, .slider__btns, .slider__btn, .modal__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,8 +769,14 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.modal {
-  display: none;
+/* .modal.active {
+  display: block;
+    .modal__close:hover {
+    background-color: $color-primary-light;
+  }
+} */
+.modal.active {
+  display: block;
 }
 
 .modal__overlay {
@@ -790,6 +796,23 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__overlay.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__overlay.active .modal__close:hover {
+  background-color: #FDDCC4;
 }
 
 .modal__window {
@@ -798,6 +821,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translate(26px, -26px);
       -ms-transform: translate(26px, -26px);
           transform: translate(26px, -26px);
+  display: none;
 }
 
 @media (max-width: 1279px) {
@@ -813,15 +837,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.modal__window.active {
+  display: block;
+}
+
 .modal__close {
-  /*  position: relative;
-  left: 890px;
-  top: 0px;
-  height: 52px;
-  width: 52px;
-  padding: 15px;
-  border: 2px solid #F1CDB3;
-  border-radius: 100px;*/
   z-index: 10;
   position: relative;
   left: 890px;
@@ -849,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.modal__wrapper {
+.modal__card {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -859,22 +879,30 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   background-color: #FAFAFA;
   border-radius: 9px;
+  overflow: auto;
+  display: none;
 }
 
 @media (max-width: 1279px) {
-  .modal__wrapper {
+  .modal__card {
     width: 630px;
     min-height: 350px;
   }
 }
 
 @media (max-width: 767px) {
-  .modal__wrapper {
+  .modal__card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 240px;
   }
+}
+
+.modal__card.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal__img-wrapper {

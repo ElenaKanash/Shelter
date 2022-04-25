@@ -1,6 +1,17 @@
 .modal {
-  display: none;
+ // display: none;
 }
+/* .modal.active {
+  display: block;
+    .modal__close:hover {
+    background-color: $color-primary-light;
+  }
+} */
+
+.modal.active {
+	display: block;
+}
+
 
 .modal__overlay {
   position: fixed;
@@ -13,12 +24,26 @@
   justify-content: center;
   align-items:center;
   z-index: 10;
+  opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
 }
+
+.modal__overlay.active {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+  .modal__close:hover {
+    background-color: $color-primary-light;
+  }
+}
+
 
 .modal__window {
   width: 952px;
   min-height: 552px;
   transform: translate(26px, -26px);
+  display: none;
   @include medium-scrin {
     width: 682px;
     min-height: 402px;
@@ -28,16 +53,11 @@
   }
 }
 
-.modal__close {
-/*  position: relative;
-  left: 890px;
-  top: 0px;
-  height: 52px;
-  width: 52px;
-  padding: 15px;
-  border: 2px solid #F1CDB3;
-  border-radius: 100px;*/
+.modal__window.active {
+	display: block;
+}
 
+.modal__close {
   z-index: 10;
   &:hover{
     cursor: pointer;
@@ -59,7 +79,7 @@
   }
 }
 
-.modal__wrapper {
+.modal__card {
   @extend %display-flex;
   align-items: start;
   width: 900px;
@@ -67,6 +87,8 @@
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   background-color: $color-light-s;
   border-radius: 9px;
+  overflow: auto;
+  display: none;
   @include medium-scrin{
     width: 630px;
     min-height: 350px;
@@ -76,8 +98,13 @@
    justify-content: center;
     width: 240px;
   }
-
 }
+
+.modal__card.active {
+	display: flex;
+}
+
+
 .modal__img-wrapper {
   width: 500px;
   @include medium-scrin{
