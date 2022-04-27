@@ -12,9 +12,6 @@ const wrapper = document.querySelector('.header__wrapper'),
 
 burgerBtn.addEventListener('click', toggleMenu);
 
-/* burgerBtn.addEventListener('click', () =>
-document.body.style.overflow = "visible" ); */
-
 overlay.addEventListener('click', toggleMenu);
 
 menuLinks.forEach(el =>
@@ -141,10 +138,11 @@ const cards = document.querySelectorAll('.card'),
 
 cards.forEach(el => {
   el.addEventListener('click', (e) => {
+    document.body.style.overflow = "hidden";
     modalOverlay.classList.add('active');
     modalWindow.classList.add('active');
     modalCard.classList.add('active');
-    body.classList.add('noscroll');
+   // body.classList.add('noscroll');
     createModalCard()
 
     let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
@@ -166,14 +164,14 @@ function closeModal(e) {
   if (e.target == e.currentTarget){
     modalOverlay.classList.remove('active');
     modalWindow.classList.remove('active');
-   // document.body.style.overflow = "visible";
-   body.classList.remove('noscroll');
+  // body.classList.remove('noscroll');
+  document.body.style.overflow = "visible";
   }
 }
 
-function createModalCard() {
+/* function createModalCard() {
  // app.innerHTML='bbbbbbb';
-}
+} */
 
 
 
