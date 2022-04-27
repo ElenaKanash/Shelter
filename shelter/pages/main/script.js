@@ -3,6 +3,7 @@
 const wrapper = document.querySelector('.header__wrapper'),
       overlay = document.querySelector('.nav-overley'),
       burgerBtn = document.querySelector('.burger'),
+      body = document.querySelector('.body'),
       menu = document.querySelector('.nav'),
       menuLinks = [...document.querySelectorAll('.nav__link')],
       logoMain = document.querySelector('.logo__link_main');
@@ -11,7 +12,7 @@ const wrapper = document.querySelector('.header__wrapper'),
 logoMain.classList.add('disabled'); //блокирование перехода по ссылке по клику на лого на главной странице
 //menuLinks[2].classList.toggle('disabled');
 //menuLinks[3].classList.toggle('disabled');
-document.body.style.overflow = "visible";
+//document.body.style.overflow = "visible";
 
 burgerBtn.addEventListener('click', toggleMenu);//открываем иеню по клику на кнопку
 
@@ -30,52 +31,16 @@ function  toggleMenu() {
   overlay.classList.toggle('active');
   wrapper.classList.toggle('active');
   burgerBtn.classList.toggle('active');
-  document.body.style.overflow = "hidden"; //запретить скролл при открытии меню
+ // document.body.style.overflow = "hidden"; //запретить скролл при открытии меню
+ body.classList.toggle('noscroll');
 }
 
-// burger end
-
-// modal
-
-const cards = document.querySelectorAll('.card'),
-      modal = document.querySelector('.modal'),
-      modalOverlay = document.querySelector('.modal__overlay'),
-      modalWindow = document.querySelector ('.modal__window')
-      modalCloseBtn = document.querySelector('.modal__close'),
-      modalCloseIcone = document.querySelector('.modal__close-icone'),
-      modalCard = document.querySelector('.modal__card');
-
-cards.forEach(el => {
-  el.addEventListener('click', (e) => {
-    let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
-    console.log(e.currentTarget.dataset.id);
-
-  //  CreateModalCard();
-
-   // document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
-    //console.log(document.querySelector(`[data-name="${dataCard}"]`))
-    modalOverlay.classList.add('active');
-    modalWindow.classList.add('active');
-    modalCard.classList.add('active');
+// burger end-----------------------------------------------------
 
 
-  }
-)
-});
+// modal window
 
-modalOverlay.addEventListener('click',closeModal);
-modalCloseBtn.addEventListener('click',closeModal);
-modalCloseIcone.addEventListener('click',closeModal);
-
-function closeModal(e) {
-  if (e.target == e.currentTarget){
-    modalOverlay.classList.remove('active');
-    modalWindow.classList.remove('active');
-    document.body.style.overflow = "visible";
-  }
-}
-
-const data = [
+const petsData = [
   {
     "name": "Jennifer",
     "img": "../../assets/images/jennifer.png",
@@ -165,5 +130,55 @@ const data = [
     "parasites": ["lice", "fleas"]
   }
 ]
+
+const cards = document.querySelectorAll('.card'),
+      modal = document.querySelector('.modal'),
+      modalOverlay = document.querySelector('.modal__overlay'),
+      modalWindow = document.querySelector ('.modal__window')
+      modalCloseBtn = document.querySelector('.modal__close'),
+      closeBtn = document.querySelector('.close'),
+      console.log(closeBtn)
+      console.log(modalCloseBtn)
+      modalCloseIcone = document.querySelector('.modal__close-icone'),
+      modalCard = document.querySelector('.modal__card'),
+      app = document.querySelector('.app');
+
+cards.forEach(el => {
+  el.addEventListener('click', (e) => {
+    modalOverlay.classList.add('active');
+    modalWindow.classList.add('active');
+    modalCard.classList.add('active');
+    body.classList.add('noscroll');
+
+    createModalCard()
+
+    let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
+    console.log(dataCard)
+
+   // document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
+  //  console.log(document.querySelector(`[data-name="${dataCard}"]`))
+  }
+)
+});
+
+modalOverlay.addEventListener('click',closeModal);
+modalCloseBtn.addEventListener('click',closeModal);
+modalCloseIcone.addEventListener('click',closeModal);
+
+function closeModal(e) {
+  if (e.target == e.currentTarget){
+    modalOverlay.classList.remove('active');
+    modalWindow.classList.remove('active');
+   // document.body.style.overflow = "visible";
+    body.classList.remove('noscroll');
+  }
+}
+
+function createModalCard() {
+//modalCard.innerHTML = '';
+
+
+
+}
 
 
