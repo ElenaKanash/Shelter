@@ -26,6 +26,11 @@ body {
   color: $color-dark-xl;
 }
 
+.body.noscroll{
+  position:fixed;
+  overflow:hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;

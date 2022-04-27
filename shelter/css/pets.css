@@ -834,6 +834,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .modal__window {
     width: 271px;
+    margin-right: 20px;
   }
 }
 
@@ -1027,6 +1028,11 @@ body {
   font-weight: 400;
   background-color: #F6F6F6;
   color: #4C4C4C;
+}
+
+.body.noscroll {
+  position: fixed;
+  overflow: hidden;
 }
 
 img {
