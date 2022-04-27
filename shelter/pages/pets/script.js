@@ -144,7 +144,7 @@ cards.forEach(el => {
     modalOverlay.classList.add('active');
     modalWindow.classList.add('active');
     modalCard.classList.add('active');
-
+    body.classList.add('noscroll');
     createModalCard()
 
     let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
@@ -166,7 +166,8 @@ function closeModal(e) {
   if (e.target == e.currentTarget){
     modalOverlay.classList.remove('active');
     modalWindow.classList.remove('active');
-    document.body.style.overflow = "visible";
+   // document.body.style.overflow = "visible";
+   body.classList.remove('noscroll');
   }
 }
 
