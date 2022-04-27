@@ -143,20 +143,33 @@ const cards = document.querySelectorAll('.card'),
       modalCard = document.querySelector('.modal__card'),
       app = document.querySelector('.app');
 
+
+app.addEventListener('click', (e) => {
+  console.log(e.target)
+  body.classList.add('noscroll');
+  modalOverlay.classList.add('active');
+    modalWindow.classList.add('active');
+    modalCard.classList.add('active');
+    document.body.style.overflow = "hidden";
+
+})
+
 cards.forEach(el => {
   el.addEventListener('click', (e) => {
+    document.body.style.overflow = "hidden";
+   // body.classList.add('noscroll');
     modalOverlay.classList.add('active');
     modalWindow.classList.add('active');
     modalCard.classList.add('active');
-    body.classList.add('noscroll');
+
 
     createModalCard()
 
     let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
     console.log(dataCard)
 
-   // document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
-  //  console.log(document.querySelector(`[data-name="${dataCard}"]`))
+    document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
+    console.log(document.querySelector(`[data-name="${dataCard}"]`))
   }
 )
 });
@@ -169,13 +182,14 @@ function closeModal(e) {
   if (e.target == e.currentTarget){
     modalOverlay.classList.remove('active');
     modalWindow.classList.remove('active');
-   // document.body.style.overflow = "visible";
-    body.classList.remove('noscroll');
+   // body.classList.remove('noscroll');
+    document.body.style.overflow = "visible";
   }
 }
 
 function createModalCard() {
 //modalCard.innerHTML = '';
+
 
 
 
