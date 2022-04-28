@@ -109,14 +109,18 @@
 
 .modal__img-wrapper {
   width: 500px;
+  height: 500px;
+
   @include medium-scrin{
     width: 350px;
+    height: 350px;
   }
   @include small-scrin {
     display: none;
   }
 }
 .modal__img {
+  object-fit: cover;
   border-radius: 1%;
 }
 
