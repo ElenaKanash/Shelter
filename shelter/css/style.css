@@ -1621,11 +1621,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal__img-wrapper {
   width: 500px;
+  height: 500px;
 }
 
 @media (max-width: 1279px) {
   .modal__img-wrapper {
     width: 350px;
+    height: 350px;
   }
 }
 
@@ -1636,6 +1638,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal__img {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1%;
 }
 

@@ -148,8 +148,8 @@ cards.forEach(el => {
     let dataCard = e.currentTarget.dataset.id; //получили дата-атрибут карточки с питомцем
     console.log(dataCard)
 
-   // document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
-  //  console.log(document.querySelector(`[data-name="${dataCard}"]`))
+    document.querySelector(`[data-name="${dataCard}"]`).classList.add('active');
+    console.log(document.querySelector(`[data-name="${dataCard}"]`))
   }
 )
 });
@@ -169,9 +169,50 @@ function closeModal(e) {
   }
 }
 
-/* function createModalCard() {
- // app.innerHTML='bbbbbbb';
-} */
+function createModalCard() {
+  app.innerHTML = '';
+ // ${petsData.}
+  app.innerHTML = `
+  ${petsData.map(function(pet) {
+   return `
+    <div class="modal__card" data-name="${pet.name}">
+            <div class="modal__img-wrapper">
+              <img src="${pet.img}" alt="pet" class="modal__img">
+            </div>
+            <div class="modal__content">
+              <h2 class="modal__title">${pet.name}</h2>
+
+              <h3 class="modal__subtitle">
+              ${pet.type} - ${pet.breed}
+              </h3>
+              <p class="modal__description">
+              ${pet.description}
+              </p>
+
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span class="modal__span">Age: </span> ${pet.age}
+                </li>
+
+                <li class="modal__item">
+                  <span class="modal__span">Inoculations: </span>${pet.inoculations}
+                </li>
+
+                <li class="modal__item">
+                  <span class="modal__span">Diseases: </span>${pet.diseases}
+                </li>
+
+                <li class="modal__item">
+                  <span class="modal__span">Parasites: </span>${pet.parasites}
+                </li>
+              </ul>
+            </div>
+          </div>
+  `
+  }).join('')} `
+
+
+}
 
 
 
