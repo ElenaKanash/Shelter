@@ -193,7 +193,6 @@ function createModalCard() {
   app.innerHTML = `
   ${petsData.map(function(pet) {
    return `
-
     <div class="modal__card" data-name="${pet.name}">
             <div class="modal__img-wrapper">
               <img src="${pet.img}" alt="pet" class="modal__img">
