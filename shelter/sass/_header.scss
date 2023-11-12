@@ -1,0 +1,137 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 1;
+  //background-color: #5B483A;
+  @include medium-scrin {
+    padding-top: 30px;
+    padding-bottom: 0;
+    z-index: 1;
+  }
+}
+
+.header__wrapper {
+  @extend %display-flex;
+}
+
+.header__wrapper.active {
+  @include small-scrin {
+    width: 300px;
+    margin-left: auto;
+  }
+}
+
+.logo {
+  margin-right: auto;
+  @include small-scrin {
+    z-index: 15;
+  }
+}
+
+.logo.active{
+  @include small-scrin {
+   // z-index: 15;
+  //  margin-left: auto;
+  }
+}
+
+.logo__link_main.disabled {
+  pointer-events: none;
+}
+
+.logo__title {
+  margin-bottom: 10px;
+  font-family: 'Tinos','Georgia';
+  //font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.08em;
+  color: $color-primary;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-primary-light;
+    //font-size: 33px;
+  }
+}
+
+.logo__descr {
+  font-family: 'Arimo', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  color: $color-light-xl;
+}
+
+.nav {
+  @include small-scrin {
+    position: fixed;
+    width: 320px;
+    height: 823px;
+    top: 0;
+    right: 0;
+    background: $color-dark-3xl;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: .3s all linear;
+  }
+}
+.nav_pets{
+  background: $color-light-xl;
+}
+.nav.active {
+  transform: translateX(0);
+}
+
+.nav__list {
+  @extend %display-flex;
+  @include small-scrin {
+    //display: none;
+    padding-top: 248px;
+    gap: 42px;
+    width: 244px;
+    margin: auto;
+  }
+}
+.nav__item {
+  margin-left: 36px;
+  @include small-scrin {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.nav__link {
+  font-family: 'Arimo', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: $color-dark-s;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-light-s;
+  }
+  @include small-scrin {
+    font-size: 32px;
+    line-height: 160%;
+  }
+}
+
+.nav__link.disabled {
+  pointer-events: none;
+}
+
+.link-active {
+  color: $color-light-s;
+  border-bottom: 2px solid $color-primary;
+  padding-bottom: 10px;
+  cursor: auto;
+}
